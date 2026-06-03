@@ -169,6 +169,149 @@
     animation-fill-mode: forwards;
 }
 
+/* Tree and Panel Layout */
+
+.tree-and-panel {
+    display: grid;
+    grid-template-columns: 1fr 0fr;
+    align-items: center;
+
+    max-width: 1400px;
+    margin: 0 auto;
+
+    transition: all 0.45s ease;
+}
+
+.services-tree-section.has-panel .tree-and-panel {
+    grid-template-columns: 3fr 1fr;
+}
+
+.tree-area {
+    display: flex;
+    justify-content: center;
+
+    transition: transform 0.45s ease;
+}
+
+.services-tree-section.has-panel .tree-area {
+    transform: translateX(-5%);
+}
+
+/* Service Panel */
+
+.service-detail-panel {
+    min-height: 550px;
+
+    background: #E0DEC5;
+
+    border-radius: 40px 40px 40px 40px;
+
+    padding: 40px;
+
+    color: #4F5D50;
+
+    box-shadow:
+            -15px 0 40px rgba(0,0,0,0.12);
+
+    opacity: 0;
+
+    transform: translateX(120%);
+
+    pointer-events: none;
+
+    transition:
+            transform 0.45s ease,
+            opacity 0.45s ease;
+}
+
+.service-detail-panel.is-open {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+.panel-close-button {
+    width: 42px;
+    height: 42px;
+
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #5A645B;
+    color: #F5F0E6;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+.panel-close-button:hover {
+    background: #DDBE7D;
+    color: #1F1F1F;
+}
+
+.panel-label {
+    margin-top: 35px;
+
+    color: #A98245;
+
+    font-weight: 700;
+
+    letter-spacing: 0.15em;
+
+    text-transform: uppercase;
+}
+
+.service-detail-panel h3 {
+    margin: 18px 0;
+
+    font-family: Georgia, serif;
+
+    font-size: clamp(2rem, 3vw, 3.2rem);
+
+    font-weight: 400;
+
+    line-height: 1;
+}
+
+.service-detail-panel p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.panel-services-link {
+    display: inline-flex;
+
+    margin-top: 30px;
+
+    padding: 14px 24px;
+
+    background: #DDC4AD;
+
+    color: #5A645B;
+
+    border-radius: 999px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: all 0.25s ease;
+}
+
+.panel-services-link:hover {
+    background: #DDBE7D;
+    color: #1F1F1F;
+}
+
 @keyframes drawTree {
     to {
         stroke-dashoffset: 0;
