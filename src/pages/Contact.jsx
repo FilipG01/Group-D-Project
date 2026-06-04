@@ -1,5 +1,13 @@
+import ContactForm from "../components/ContactForm";
+import LocationSection from "../components/LocationSection";
+
 function Contact() {
-    return <h1>Contact Page</h1>
+    return (
+        <main className="contact-page">
+            <ContactForm />
+            <LocationSection />
+        </main>
+    )
 }
 
 export default Contact

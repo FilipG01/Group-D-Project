@@ -1,0 +1,80 @@
+import "../../styles/ContactForm.css";
+
+function ContactForm() {
+    function handleSubmit(event) {
+        event.preventDefault();
+    }
+
+    return (
+        <section className="contact-form-section" aria-labelledby="contact-title">
+            <div className="contact-form-heading">
+                <h1 id="contact-title">Get in touch</h1>
+                <span className="contact-form-icon" aria-hidden="true"></span>
+                <p>
+                    We'd love to hear from you.
+                    <br />
+                    Reach out with any questions.
+                </p>
+            </div>
+
+            <form className="contact-form-card" onSubmit={handleSubmit}>
+                <h2>Send us a message</h2>
+
+                <div className="contact-form-fields">
+                    <label className="contact-form-field">
+                        <span>Name</span>
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Enter Name"
+                            autoComplete="name"
+                        />
+                    </label>
+
+                    <label className="contact-form-field">
+                        <span>Email Address</span>
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            autoComplete="email"
+                        />
+                    </label>
+
+                    <label className="contact-form-field">
+                        <span>Phone Number</span>
+                        <input
+                            type="tel"
+                            name="phone"
+                            placeholder="e.g. +353 00 000 0000"
+                            autoComplete="tel"
+                        />
+                    </label>
+
+                    <label className="contact-form-field">
+                        <span>Write a Message!</span>
+                        <textarea
+                            name="message"
+                            placeholder="What's on your mind?"
+                            rows="5"
+                        ></textarea>
+                    </label>
+                </div>
+
+                <div className="contact-form-actions">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+
+            <aside className="contact-form-note">
+                <h2>You don't need to know exactly what to say.</h2>
+                <p>
+                    Reaching out is a brave step. We're here to listen and help you
+                    explore what support might look like for you.
+                </p>
+            </aside>
+        </section>
+    );
+}
+
+export default ContactForm;
