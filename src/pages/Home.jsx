@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "../../styles/home.css";
 import ServicesTree from "../components/ServicesTree.jsx";
 import LocationSection from "../components/LocationSection.jsx";
+import AboutPreview from '../components/AboutPreview'
 
 function Home() {
     return (
@@ -31,6 +32,7 @@ function Home() {
                 </div>
             </section>
             <ServicesTree />
+            <AboutPreview />
             <LocationSection />
         </main>
     )
