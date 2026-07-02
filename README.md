@@ -1,16 +1,156 @@
-# React + Vite
+# Root Therapy Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern psychotherapy practice website developed for the rebranding of the current Dublin Psychotherapist website.
 
-Currently, two official plugins are available:
+The project aims to provide a calming, professional and accessible online presence while demonstrating a scalable React frontend that can later integrate with a full backend system.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This website has been built using React and Vite with a component-based architecture. The project focuses on improving user experience, accessibility, maintainability and future scalability compared to the current production website.
 
-## Expanding the ESLint configuration
+Current implemented pages include:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Home
+- About
+- Services
+- Contact
+
+The frontend has been designed to support future backend integration without requiring significant architectural changes.
+
+---
+
+## Technologies Used
+
+- React 19
+- Vite
+- React Router
+- JavaScript (ES6+)
+- CSS3
+- HTML5
+
+Development Environment
+
+- IntelliJ IDEA
+- Git
+- GitHub
+
+---
+
+## Features
+
+### Current Features
+
+- Responsive navigation
+- Modern landing page
+- Animated interactive Services Tree
+- Therapist information page
+- Contact page
+- Reusable component architecture
+- Modular page styling
+- Responsive layouts
+- Modern colour palette and branding
+
+
+
+## Project Structure
+
+```
+src/
+│
+├── assets/
+│
+├── components/
+│   ├── about/
+│   ├── home/
+│   ├── services/
+│   └── shared/
+│
+├── data/
+│
+├── pages/
+│
+├── styles/
+│   ├── global.css
+│   ├── home.css
+│   ├── about.css
+│   ├── services.css
+│   ├── header.css
+│   └── footer.css
+│
+├── App.jsx
+└── main.jsx
+```
+
+The application follows a modular component-based architecture where each page is composed of reusable React components.
+
+---
+
+## Installation
+
+Clone the repository
+
+```bash
+git clone <repository-url>
+```
+
+Navigate into the project
+
+```bash
+cd Group-D-Project
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the development server
+
+```bash
+npm run dev
+```
+
+The application will then be available at
+
+```
+http://localhost:5173
+```
+
+---
+
+## Development
+
+The project follows a feature-based component structure.
+
+Pages should only be responsible for assembling components.
+
+Business logic, reusable UI sections and data should remain separated into their respective folders.
+
+Styling is separated into individual page stylesheets with a shared global stylesheet responsible for application-wide styling.
+
+---
+
+
+## Documentation
+
+Project documentation includes:
+
+- Use Case Diagram
+- Entity Relationship Diagram
+- Class Diagram
+- Sequence Diagram
+
+These documents describe both the implemented frontend and the proposed backend architecture.
+
+---
+
+## Authors
+
+Developed by Group D
+
+- Filip Gnitecki
+- Conor Fuchs
+- Sean Byrne
