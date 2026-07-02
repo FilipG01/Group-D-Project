@@ -1,4 +1,4 @@
-import "../../styles/ContactForm.css";
+import "../styles/ContactForm.css";
 
 function ContactForm() {
     function handleSubmit(event) {
