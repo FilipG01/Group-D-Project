@@ -17,21 +17,34 @@ function LocationSection() {
                     <p>
                         <strong>Address</strong>
                         <br />
-                        Dublin, Ireland
+                        307 Swords Road, Whitehall, Dublin 9, D09 H9F5, Ireland
+                        Santry Psychotherapy Consultancy Centre
                     </p>
 
                     <p>
                         <strong>Opening Hours</strong>
                         <br />
-                        Monday - Friday: 9am - 6pm
+                        Monday - Friday: 8am - 7pm
                     </p>
 
                     <p>
                         <strong>Contact</strong>
                         <br />
-                        test@roottherapy.com
+                        <a
+                            href="mailto:marlenatherapy@gmail.com"
+                            className="location-email-link"
+                            aria-label="Email Root Therapy"
+                        >
+                            marlenatherapy@gmail.com
+                        </a>
                         <br />
-                        +353 00 000 0000
+                        <a
+                            href="tel:+353833036099"
+                            className="location-phone-link"
+                            aria-label="Call Root Therapy"
+                        >
+                            +353 083 303 6099
+                        </a>
                     </p>
                 </div>
             </div>

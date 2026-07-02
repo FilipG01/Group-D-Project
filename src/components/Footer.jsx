@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../styles/footer.css";
+import { FaFacebookF, FaInstagram, FaWhatsapp} from "react-icons/fa";
 
 function Footer() {
     return (
@@ -22,28 +23,63 @@ function Footer() {
                 </section>
 
                 <section className="footer-column">
-                    <h3>Services</h3>
-                    <Link to="/services">Addiction Recovery</Link>
-                    <Link to="/services">Relationship Counseling</Link>
-                    <Link to="/services">Stress Management</Link>
-                    <Link to="/services">Bereavement</Link>
-                    <Link to="/services">Depression</Link>
+                    <h3>Socials</h3>
+                    <a
+                        href="https://www.facebook.com/profile.php?id=61591362725769"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Facebook"
+                    >
+                        <FaFacebookF />
+                    </a>
+
+                    <a
+                        href="https://www.instagram.com/marlenatherapy?igsh=MWxvdDN2aHIwaGxkaQ=="
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram"
+                    >
+                        <FaInstagram />
+                    </a>
+
+                    <a
+                        href="https://wa.me/3530833036099"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="WhatsApp"
+                    >
+                        <FaWhatsapp />
+                    </a>
+
                 </section>
 
                 <section className="footer-column">
                     <h3>Practice</h3>
                     <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
-                    <Link to="/services">Fees</Link>
+                    <Link to="/services">Services</Link>
                     <Link to="/contact">Contact</Link>
                 </section>
 
                 <section className="footer-column footer-contact">
                     <h3>Contact</h3>
-                    <p>test@roottherapy.com</p>
-                    <p>+353 00 000 0000</p>
-                    <p>Dublin, Ireland</p>
-                    <p>Mon - Fri: 9am - 6pm</p>
+                    <a
+                        href="mailto:marlenatherapy@gmail.com"
+                        className="footer-email-link"
+                        aria-label="Email Root Therapy"
+                    >
+                        marlenatherapy@gmail.com
+                    </a>
+                    <a
+                        href="tel:+353833036099"
+                        className="footer-phone-link"
+                        aria-label="Call Root Therapy"
+                    >
+                        +353 083 303 6099
+                    </a>
+                    <p>307 Swords Road, Whitehall, Dublin 9, D09 H9F5, Ireland
+                        Santry Psychotherapy Consultancy Centre</p>
+                    <p>Mon - Fri: 8am - 7pm</p>
                 </section>
             </div>
 

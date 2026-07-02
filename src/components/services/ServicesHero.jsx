@@ -3,10 +3,9 @@ function ServicesHero() {
         <section className="services-hero">
             <div className="services-hero-content">
                 <p className="section-label">Services</p>
-                <h1>Support that meets you where you are.</h1>
+                <h1>How can we help you become a better self?</h1>
                 <p>
-                    Rooted in empathy and professional care, our services are designed
-                    to offer a safe, grounded space for healing, reflection, and growth.
+                    Our expert team of therapists provide the utmost of services in the field of psychotherapy to help you feel more you.
                 </p>
             </div>
         </section>

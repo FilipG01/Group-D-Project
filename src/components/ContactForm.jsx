@@ -1,8 +1,24 @@
 import "../styles/ContactForm.css";
+import emailjs from "@emailjs/browser";
 
 function ContactForm() {
     function handleSubmit(event) {
         event.preventDefault();
+
+        emailjs.sendForm(
+            "service_5lejcht",
+            "template_xk3o6wn",
+            event.target,
+            "YDQEO17d0RSmcX8EV"
+        )
+            .then(() => {
+                alert("Message sent!");
+                event.target.reset();
+            })
+            .catch((error) => {
+                console.error(error);
+                alert("Something went wrong.");
+            });
     }
 
     return (
@@ -28,6 +44,7 @@ function ContactForm() {
                             name="name"
                             placeholder="Enter Name"
                             autoComplete="name"
+                            required
                         />
                     </label>
 
@@ -38,6 +55,7 @@ function ContactForm() {
                             name="email"
                             placeholder="you@example.com"
                             autoComplete="email"
+                            required
                         />
                     </label>
 
@@ -48,6 +66,7 @@ function ContactForm() {
                             name="phone"
                             placeholder="e.g. +353 00 000 0000"
                             autoComplete="tel"
+                            required
                         />
                     </label>
 
@@ -57,6 +76,7 @@ function ContactForm() {
                             name="message"
                             placeholder="What's on your mind?"
                             rows="5"
+                            required
                         ></textarea>
                     </label>
                 </div>

@@ -8,7 +8,7 @@ function AboutHero() {
                 </p>
 
                 <h1>
-                    Support that meets you where you are.
+                    Learn more about out location and team of experts
                 </h1>
 
                 <p>
