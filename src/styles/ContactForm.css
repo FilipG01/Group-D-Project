@@ -23,7 +23,7 @@
 .contact-form-heading h1 {
     margin: 0;
     color: #4f5d50;
-    font-family: Georgia, "Times New Roman", serif;
+
     font-size: 64px;
     font-weight: 400;
     line-height: 1;
@@ -45,7 +45,7 @@
 .contact-form-heading p {
     margin: 0;
     color: #4f5d50;
-    font-family: Georgia, "Times New Roman", serif;
+
     font-size: 22px;
     line-height: 1.35;
     letter-spacing: 0;
@@ -64,7 +64,7 @@
 .contact-form-card h2 {
     margin: 0 0 18px;
     color: #4f5d50;
-    font-family: Georgia, "Times New Roman", serif;
+
     font-size: 28px;
     font-weight: 400;
     line-height: 1.2;
@@ -84,7 +84,7 @@
     display: block;
     margin-bottom: 7px;
     color: #2f352f;
-    font-family: Georgia, "Times New Roman", serif;
+
     font-size: 15px;
     line-height: 1;
     letter-spacing: 0;
@@ -167,7 +167,7 @@
 .contact-form-note h2 {
     margin: 0 0 8px;
     color: #4f5d50;
-    font-family: Georgia, "Times New Roman", serif;
+
     font-size: 34px;
     font-weight: 400;
     line-height: 1.15;
@@ -178,7 +178,7 @@
     max-width: 620px;
     margin: 0 auto;
     color: #4f5d50;
-    font-family: Georgia, "Times New Roman", serif;
+
     font-size: 18px;
     line-height: 1.45;
     letter-spacing: 0;
