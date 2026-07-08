@@ -1,72 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { treeServices } from "../../data/treeServicesData";
 import '../../styles/servicesTree.css'
-
-const treeServices = [
-    {
-        label: 'Addiction',
-        x: 28,
-        y: 36,
-        description:
-            'Support for individuals navigating addiction, recovery, relapse prevention, and the emotional patterns connected to dependency.',
-    },
-    {
-        label: 'Relationships',
-        x: 42,
-        y: 28,
-        description:
-            'A space to explore communication, conflict, attachment, boundaries, and emotional connection in relationships.',
-    },
-    {
-        label: 'Stress',
-        x: 58,
-        y: 25,
-        description:
-            'Support for understanding stress, reducing overwhelm, and developing healthier ways to manage pressure.',
-    },
-    {
-        label: 'Anxiety',
-        x: 72,
-        y: 34,
-        description:
-            'Therapeutic support for anxiety, worry, intrusive thoughts, panic, and feelings of being emotionally stuck.',
-    },
-    {
-        label: 'Bereavement',
-        x: 34,
-        y: 52,
-        description:
-            'Compassionate support for grief, loss, adjustment, and the complex emotions that can follow bereavement.',
-    },
-    {
-        label: 'Depression',
-        x: 66,
-        y: 50,
-        description:
-            'Support for low mood, emotional heaviness, lack of motivation, and rebuilding connection with yourself.',
-    },
-    {
-        label: 'LGBTQ+',
-        x: 25,
-        y: 68,
-        description:
-            'An affirming space to explore identity, relationships, self-acceptance, and lived experience.',
-    },
-    {
-        label: 'Neurodiversity',
-        x: 50,
-        y: 66,
-        description:
-            'Support for ADHD, autism, sensory needs, masking, self-understanding, and neurodivergent identity.',
-    },
-    {
-        label: 'Stress Mgmt',
-        x: 75,
-        y: 68,
-        description:
-            'Practical and reflective support for managing ongoing stress, transitions, burnout, and emotional strain.',
-    },
-]
 
 function ServicesTree() {
     const sectionRef = useRef(null)
@@ -178,8 +113,8 @@ function ServicesTree() {
                             <h3>{selectedService.label}</h3>
                             <p>{selectedService.description}</p>
 
-                            <Link to="/services" className="panel-services-link">
-                                View all services →
+                            <Link to={selectedService.path} className="panel-services-link">
+                                Learn more →
                             </Link>
                         </>
                     )}
