@@ -8,26 +8,26 @@ export const locationGallery = [
     {
         id: 1,
         image: img1,
-        alt: "Reception area",
+        alt: "Front entrance",
     },
     {
         id: 2,
         image: img2,
-        alt: "Therapy room",
+        alt: "Therapy room 1",
     },
     {
         id: 3,
         image: img3,
-        alt: "Waiting area",
+        alt: "Therapy room 2",
     },
     {
         id: 4,
         image: img4,
-        alt: "Consultation room",
+        alt: "temp img 1",
     },
     {
         id: 5,
         image: img5,
-        alt: "Practice exterior",
+        alt: "temp img 2",
     },
 ];
