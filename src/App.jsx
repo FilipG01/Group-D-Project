@@ -10,6 +10,7 @@ import Contact from './pages/Contact.jsx'
 import ServiceDetail from "./pages/ServiceDetail";
 
 import Privacy from "./pages/Privacy.jsx";
+import Terms from "./pages/Terms.jsx";
 
 import ScrollToTop from "./components/shared/ScrollToTop";
 
@@ -28,6 +29,7 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/services/:serviceSlug" element={<ServiceDetail />} />
                 <Route path="/privacy" element={<Privacy />} />
+                <Route path="/terms" element={<Terms />} />
             </Routes>
 
             <FloatingCallButton />

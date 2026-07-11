@@ -90,6 +90,20 @@ export const pageMeta = {
         type: "website",
     },
 
+    terms: {
+        title: "Terms & Conditions | Root Therapy",
+        description:
+            "Read the terms governing use of the Root Therapy website, including website information, enquiries, acceptable use and third-party links.",
+        keywords: [
+            "Root Therapy terms and conditions",
+            "Root Therapy website terms",
+            "Root Therapy website terms Ireland",
+        ],
+        canonical: `${SITE_URL}/terms`,
+        image: DEFAULT_SHARE_IMAGE,
+        type: "website",
+    },
+
 };
 
 export { SITE_NAME, SITE_URL, DEFAULT_SHARE_IMAGE };
