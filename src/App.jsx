@@ -9,6 +9,8 @@ import Services from './pages/Services.jsx'
 import Contact from './pages/Contact.jsx'
 import ServiceDetail from "./pages/ServiceDetail";
 
+import Privacy from "./pages/Privacy.jsx";
+
 import ScrollToTop from "./components/shared/ScrollToTop";
 
 import FloatingCallButton from "./components/shared/FloatingCallButton";
@@ -25,6 +27,7 @@ function App() {
                 <Route path="/services" element={<Services />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/services/:serviceSlug" element={<ServiceDetail />} />
+                <Route path="/privacy" element={<Privacy />} />
             </Routes>
 
             <FloatingCallButton />

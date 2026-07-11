@@ -76,6 +76,20 @@ export const pageMeta = {
         type: "website",
     },
 
+    privacy: {
+        title: "Privacy Policy | Root Therapy",
+        description:
+            "Read the Root Therapy Privacy Policy, including how website enquiries, analytics, advertising data and cookies are handled.",
+        keywords: [
+            "Root Therapy privacy policy",
+            "Root Therapy privacy",
+            "Root Therapy policies",
+        ],
+        canonical: `${SITE_URL}/privacy`,
+        image: DEFAULT_SHARE_IMAGE,
+        type: "website",
+    },
+
 };
 
 export { SITE_NAME, SITE_URL, DEFAULT_SHARE_IMAGE };
